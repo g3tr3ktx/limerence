@@ -7,6 +7,7 @@
     <title>Limerence</title>
     <link rel="stylesheet" href="resources/stylesheet.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -15,7 +16,6 @@
     <div class="header">
         <div class="container">
             <div class="navbar">
-
                 <div class="logo">
                     <h1>Limerence</h1>
                 </div>
@@ -41,6 +41,7 @@
                 </nav>
 
                 <img src="images/cart.png" width="30px" height="30px">
+                <i class="fa fa-bars fa-2x" id="menu-icon" onclick="menuToggle()"></i>
             </div>
 
             <div class="row">
@@ -60,9 +61,104 @@
     </div>
 
 
+    <!-- ---------------------offer----------------------- -->
+
+    <div class="small-container">
+        <h2 class="title">
+            Offer of the day
+        </h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/offer-1.png">
+                <h4>Aesthetic Printed Tshirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$12.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/offer-2.png">
+                <h4>Aesthetic Printed Tshirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$12.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/offer-3.png">
+                <h4>Aesthetic Printed Tshirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>$12.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/offer-4.png">
+                <h4>Aesthetic Printed Tshirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$12.00</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -------------------------footer---------------------- -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download app for android app and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" onclick="alert('Available soon')">
+                        <img src="images/app-store.png " onclick="alert( 'Available soon') ">
+                    </div>
+                </div>
+
+                <div class="footer-col-2 ">
+                    <h3>About Us</h3>
+                </div>
+
+                <div class="footer-col-3 ">
+                    <h3>CONNECT WITH US</h3>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
+    <script>
+        var MenuItems = document.getElementById('MenuItems');
+        MenuItems.style.maxHeight = "0px";
+
+        function menuToggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
 </body>
 
 </html>

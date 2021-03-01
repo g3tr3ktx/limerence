@@ -1,17 +1,17 @@
 * {
-    background: #FFABD9;
     box-sizing: border-box;
     color: white;
 }
 
 body {
+    background: #FFABD9;
     font-family: 'lulocleanw01-oneboldregular';
 }
 
 .logo {
-    display: inline-block;
+    padding: 0px 10px;
+    /* display: inline-block; */
     border: 1px solid white;
-    color: white;
     text-shadow: 2px 2px #45FFC7, 5px 5px grey;
 }
 
@@ -71,4 +71,112 @@ a {
     color: red;
     transform: translateY(-10px);
     text-shadow: 2px 2px #45FFC7;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    min-width: 200px;
+    padding: 0 25px;
+    margin: auto;
+}
+
+.col-4 img {
+    width: 100%;
+}
+
+.col-4 p {
+    color: white;
+    font-size: 200x;
+    text-shadow: 1px 1px red;
+}
+
+.col-4 i {
+    color: yellow;
+    text-shadow: 2px 2px red, 3px 3px grey;
+}
+
+
+/* ---------footer--------------- */
+
+.footer {
+    background: white;
+    color: black;
+    /* font-size: 14px; */
+    padding: 60px 0 20px;
+}
+
+.footer h3,
+p {
+    color: black;
+}
+
+.footer .row {
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.footer-col-1,
+.footer-col-2,
+.footer-col-3 {
+    /* background: red; */
+    min-width: 250px;
+    flex-basis: 30%;
+    text-align: center;
+    /* margin-bottom: 20x; */
+}
+
+.app-logo img {
+    width: 140px;
+}
+
+.app-logo {
+    margin-top: 20px;
+}
+
+#menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+
+/* ----------------media query for menu ---------------- */
+
+@media only screen and (max-width: 800px) {
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        /* background: white; */
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a {
+        color: white;
+    }
+    #menu-icon {
+        display: block;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+}
+
+
+/* media query for less than 600 screen size */
+
+@media only screen and (max-width:600px) {
+    .row {
+        text-align: center;
+    }
+    .col-2,
+    .col-4 {
+        flex-basis: 100%;
+    }
 }
