@@ -19,6 +19,7 @@ body {
     display: flex;
     align-items: center;
     padding: 20px;
+    justify-content: center
 }
 
 nav {
@@ -34,6 +35,10 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin-right: 20px;
+}
+
+.navbar img {
+    margin-left: 10px;
 }
 
 a {
