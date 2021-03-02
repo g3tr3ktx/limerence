@@ -10,6 +10,7 @@ body {
 
 .logo {
     padding: 0px 10px;
+    font-size: 14px;
     /* display: inline-block; */
     border: 1px solid white;
     text-shadow: 2px 2px #45FFC7, 5px 5px grey;
