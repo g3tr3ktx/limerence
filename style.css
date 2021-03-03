@@ -185,4 +185,7 @@ p {
     .col-4 {
         flex-basis: 100%;
     }
+    .btn {
+        margin-bottom: 20px;
+    }
 }
